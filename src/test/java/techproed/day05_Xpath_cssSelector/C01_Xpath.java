@@ -32,12 +32,12 @@ public class C01_Xpath {
         aramaKutusu.sendKeys("city bike", Keys.ENTER);
 
         // Hybrid Bikes bölümüne tıklayın
-        driver.findElement(By.xpath("//*[text()='Rennräder']")).click();// --> //*[.='Hybrid Bikes']
+        driver.findElement(By.xpath("//*[text()='Hybrid Bikes']")).click();// --> //*[.='Hybrid Bikes']
 
         // sonuc sayısını yazdırın
         WebElement sonucYazisi = driver.findElement(By.xpath("(//*[@class='sg-col-inner'])[1]"));
         System.out.println(sonucYazisi.getText());
-        //14 results for "city bike" bu yazının locate'i
+        //14 results for "city bike"  yazının locate'i
         String[] sonucSayisi = sonucYazisi.getText().split(" ");
         System.out.println("Sonuc Sayisi = " + sonucSayisi[0]);
 
