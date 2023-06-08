@@ -48,9 +48,5 @@ public class C02_cssSelector {
         driver.close();
 
 
-
-
-
-
     }
 }
